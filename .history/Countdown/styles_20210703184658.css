@@ -20,6 +20,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .countdown {
@@ -30,14 +31,5 @@ h2 {
 
 .day,.hour,.minute,.second {
     font-size: 3rem;
-}
-
-.countdown-image {
-    height: 50vh;
-    width: 1000px;
-    background-image: url(https://cdn.pixabay.com/photo/2019/12/07/04/24/doodle-4678658_960_720.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50%;
 }
 
