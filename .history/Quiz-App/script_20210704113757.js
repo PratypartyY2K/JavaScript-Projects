@@ -89,13 +89,13 @@ submitBtn.addEventListener("click", () => {
   const answer = getSelected();
 
   if (answer) {
-    if (answer === quizData[currentQuestion].correct) {
+    if (answer == quizData[currentQuestion].correct) {
       score++; //increment score by 1 if checked option is equal to the correct answer
     }
 
     currentQuestion++;
 
-    if (currentQuestion < quizData.length) {
+    if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
       quiz.innerHTML = `

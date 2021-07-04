@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
     background-color: #f9d29d;
     background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
     display: flex;
@@ -28,21 +28,9 @@ body {
     padding: 2rem;
 }
 
-h2 {
-    margin: 0;
-    text-align: center;
-    padding: 1rem;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
-}
-
-ul li {
-    font-size: 1.1rem;
-    margin: 1rem 0;
-    cursor: pointer;
 }
 
 button {
@@ -50,16 +38,7 @@ button {
     display: block;
     color: white;
     font-family: inherit;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     width: 100%;
     padding: 1rem;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #3b27ce;
-}
-
-button:focus {
-    background-color: #2b1aa8;
 }

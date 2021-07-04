@@ -48,7 +48,7 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
-const submitBtn = document.getElementById("submit");
+const submitBtn = document.getElementsById("submit");
 
 let currentQuestion = 0;
 let score = 0;
@@ -68,7 +68,7 @@ function loadQuiz() {
 }
 
 function getSelected() {
-  let answer = undefined;
+  //let answer = undefined;
 
   answerEls.forEach((answerEl) => {
     if (answerEl.checked) {
@@ -89,20 +89,19 @@ submitBtn.addEventListener("click", () => {
   const answer = getSelected();
 
   if (answer) {
-    if (answer === quizData[currentQuestion].correct) {
+    if (answer == quizData[currentQuestion].correct) {
       score++; //increment score by 1 if checked option is equal to the correct answer
     }
+  }
+  currentQuestion++;
 
-    currentQuestion++;
-
-    if (currentQuestion < quizData.length) {
-      loadQuiz();
-    } else {
-      quiz.innerHTML = `
+  if (currentQuiz < quizData.length) {
+    loadQuiz();
+  } else {
+    quiz.innerHTML = `
                 <h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
                 
                 <button onclick="location.reload()">Reload</button>
             `;
-    }
   }
 });

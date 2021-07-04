@@ -28,21 +28,9 @@ body {
     padding: 2rem;
 }
 
-h2 {
-    margin: 0;
-    text-align: center;
-    padding: 1rem;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
-}
-
-ul li {
-    font-size: 1.1rem;
-    margin: 1rem 0;
-    cursor: pointer;
 }
 
 button {
@@ -57,9 +45,5 @@ button {
 }
 
 button:hover {
-    background-color: #3b27ce;
-}
-
-button:focus {
-    background-color: #2b1aa8;
+    background-color: #4630e7;
 }

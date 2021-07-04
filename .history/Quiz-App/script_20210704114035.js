@@ -95,7 +95,7 @@ submitBtn.addEventListener("click", () => {
 
     currentQuestion++;
 
-    if (currentQuestion < quizData.length) {
+    if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
       quiz.innerHTML = `

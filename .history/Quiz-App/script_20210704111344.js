@@ -48,17 +48,15 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
-const submitBtn = document.getElementById("submit");
+const submitBtn = document.getElementsById("submit");
 
 let currentQuestion = 0;
-let score = 0;
 
 loadQuiz();
 
 function loadQuiz() {
-  deselectAnswers(); // to uncheck all radio buttons after moving to the next question
   const currentQuizData = quizData[currentQuestion];
-
+ 
   questionEl.innerText = currentQuizData.question;
 
   a_text.innerText = currentQuizData.a;
@@ -67,42 +65,12 @@ function loadQuiz() {
   d_text.innerText = currentQuizData.d;
 }
 
-function getSelected() {
-  let answer = undefined;
-
-  answerEls.forEach((answerEl) => {
-    if (answerEl.checked) {
-      answer = answerEl.id;
-    }
-  });
-
-  return answer; //return checked option
-}
-
-function deselectAnswers() {
-  answerEls.forEach((answerEl) => {
-    answerEl.checked = false;
-  });
-}
-
 submitBtn.addEventListener("click", () => {
-  const answer = getSelected();
+  currentQuestion++;
 
-  if (answer) {
-    if (answer === quizData[currentQuestion].correct) {
-      score++; //increment score by 1 if checked option is equal to the correct answer
-    }
-
-    currentQuestion++;
-
-    if (currentQuestion < quizData.length) {
-      loadQuiz();
-    } else {
-      quiz.innerHTML = `
-                <h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
-                
-                <button onclick="location.reload()">Reload</button>
-            `;
-    }
+  if (currentQuiz < quizData.length) {
+    loadQuiz();
+  } else {
+    alert('You finished! Give yourslef a PAT on the BACK');
   }
 });
