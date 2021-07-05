@@ -20,6 +20,7 @@
  - localStorage
 
 4. ToDo App
+ - Made a todo.md in the ToDo App folder
 
 5. Movies App
 
