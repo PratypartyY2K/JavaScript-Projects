@@ -1,0 +1,6 @@
+# Better ToDo App
+### Things learnt
+ - Custom Checkboxes
+ - Grid layout
+ - custom variables
+ - many other things...
