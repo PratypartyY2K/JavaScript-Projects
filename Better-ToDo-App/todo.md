@@ -9,4 +9,9 @@
  - "+" CSS selectors
  - ::after pseudo class
  - transition and transform
+ - Dynamic re-rendering without a framework
+ - Adding dynamic event listeners
+ - How to use localStorage to persist website data
+ - Advanced JavaScript array methods
+ - Code organization best practices
  - many other things...
