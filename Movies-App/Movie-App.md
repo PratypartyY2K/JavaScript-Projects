@@ -1,6 +1,14 @@
 ## Movie App using Public API
 
-Using API and Data from API was totally new from me. 
+### New things learnt
+**API Integration**
+
+ - list of movies
+ - movie info
+ - fav movie
+ - actors
+
+Using API and using the data from API was totally new from me. 
 Hence, I had to watch many videos before diving into this project. 
 
 #### Resources used:
