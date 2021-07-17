@@ -2,6 +2,9 @@
 ### Inspired by Florin Pop's 10 Projects in 10 hours challenge
 [Florin Pop](https://www.youtube.com/watch?v=dtKciwk_si4)
 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/PratypartyY2K/JavaScript-Projects)
+![Lines of code](https://img.shields.io/tokei/lines/github/PratypartyY2K/JavaScript-Projects)
+
 1. Countdown Timer
  - Inpiration: https://www.youtube.com/watch?v=Rib69h2DOxg
  - Can change future date from code
