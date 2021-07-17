@@ -38,4 +38,4 @@
 
 10. Recipe App
 
-### Note: These are just simple side projects with a design.
+##### Note: These are just simple side projects with a design.
