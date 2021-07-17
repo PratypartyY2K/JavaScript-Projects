@@ -26,6 +26,9 @@
 - Made a movie-app.md in the Movies-App folder
 
 6. GitHub Profiles
+ - Design: https://uidesigndaily.com/posts/photoshop-profile-card-user-day-286
+ - search for user
+ - get and show data
 
 7. Drawing App
 
