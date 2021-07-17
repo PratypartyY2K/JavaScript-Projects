@@ -4,7 +4,7 @@ const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 
-getUser("florinpop17");
+getUser("florinpop17"); // after opening the site for the first, there is should be a profile
 
 async function getUser(username) {
     const resp = await fetch(APIURL + username);
@@ -48,10 +48,10 @@ function addReposToCard(repos) {
     const reposEl = document.getElementById("repos");
 
     repos
-        .sort((a, b) => b.stargazers_count - a.stargazers_count)
-        .slice(0, 10)
-        .forEach((repo) => {
-            const repoEl = document.createElement("a");
+        .sort((a, b) => b.stargazers_count - a.stargazers_count) // sort the repos based on stars
+        .slice(0, 10) // show only the first 10 repos
+        .forEach((repo) => { // select every repo
+            const repoEl = document.createElement("a"); // each repo block should be clickable and should direct the page to the repository page
             repoEl.classList.add("repo");
 
             repoEl.href = repo.html_url;
@@ -70,6 +70,6 @@ form.addEventListener("submit", (e) => {
     if (user) {
         getUser(user);
 
-        search.value = "";
+        search.value = ""; // make the input value blank after a search is done
     }
 });
