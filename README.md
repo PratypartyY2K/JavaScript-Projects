@@ -34,11 +34,19 @@
  - get and show data
 
 7. Drawing App
+ - canvas
+ - size
+ - color
 
 8. Password Generator
+ - Design: https://codepen.io/FlorinPop17/full/BaBePej
+ - numbers
+ - letters
+ - symbols
+ - copy to clipboard
 
 9. Weather App
 
 10. Recipe App
 
-##### Note: These are just simple side projects with a design.
+**These are just simple side projects**
